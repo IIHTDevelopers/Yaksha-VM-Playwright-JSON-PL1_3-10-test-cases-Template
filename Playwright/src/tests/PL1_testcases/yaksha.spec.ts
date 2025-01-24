@@ -135,5 +135,5 @@ async function verifyUserIsNotLoggedin(page: Page) {
 }
 
 async function verifyUserisLoggedOut(page: Page) {
-  expect(await page.locator(`#login`).isVisible());
+  expect(await page.locator(`#login`).isVisible()).toBeTruthy();
 }
