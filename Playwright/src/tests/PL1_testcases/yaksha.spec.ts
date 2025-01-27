@@ -69,6 +69,7 @@ test.describe("Yaksha", () => {
 
   test("TS-6 Capture screenshot of Inventory Requisition section", async ({ page }) => {
     await subStorePage.captureInventoryRequisitionScreenshot();
+    await verifyUserIsOnCorrectURL(page, "Inventory/InventoryRequisitionList");
   });
 
   test("TS-7 Verify logout functionality from Admin dropdown", async ({
@@ -116,9 +117,10 @@ async function verifyUserIsLoggedin(page: Page) {
     await page.locator('//li[@class="dropdown dropdown-user"]').isVisible()
   );
 }
+
 async function verifyActiveOrderIsPresent(page: Page) {
   // Verify active order is present by checking if 'Active Order' element is visible
-  expect(await page.locator('//span[text()=" Active Orders"]').isVisible());
+  expect(await page.locator('//span[text()=" Active Orders"]').isVisible()).toBeTruthy();
 }
 
 async function verifyUserIsOnCorrectURL(page: Page, expectedURL: string) {
