@@ -32,14 +32,4 @@ export default class MedicalRecordsPage {
   async keywordMatching() {
     // write your logic here
   }
-
-  /**
-   * @Test5
-   * @description This method verifies the presence of the doctor filter functionality in the medical records module.
-   * It applies the filter by selecting a specific doctor and a date range, and validates that the search results
-   * correctly display records associated with the selected doctor.
-   */
-  async presenceOfDoctorFilter() {
-    // write your logic here
-  }
 }
