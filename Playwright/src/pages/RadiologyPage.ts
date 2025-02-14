@@ -9,8 +9,6 @@ export default class RadiologyPage {
   private fromDate: Locator;
   private toDate: Locator;
   private okButton: Locator;
-  private addReportButton: Locator;
-  private closeModalButton: Locator;
   private dateRangeDropdown: Locator;
   private last3MonthsOption: Locator;
   private dateCells: Locator;
@@ -23,8 +21,6 @@ export default class RadiologyPage {
     this.fromDate = page.locator(``);
     this.toDate = page.locator(``);
     this.okButton = page.locator(``);
-    this.addReportButton = page.locator('');
-    this.closeModalButton = page.locator(``);
     this.dateRangeDropdown = page.locator("");
     this.last3MonthsOption = page.locator("");
     this.dateCells = page.locator("");
