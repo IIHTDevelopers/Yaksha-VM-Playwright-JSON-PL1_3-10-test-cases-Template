@@ -9,8 +9,6 @@ export default class MaternityPage {
     maternityAllowanceReport: Locator;
     dateFrom: Locator;
     showReportBtn: Locator;
-    tableRowLocator: Locator;
-    createdOn: Locator;
     dataType: Locator;
   };
 
@@ -22,8 +20,6 @@ export default class MaternityPage {
       maternityAllowanceReport: this.page.locator(''),
       dateFrom: this.page.locator(''),
       showReportBtn: this.page.locator(''),
-      tableRowLocator: this.page.locator(''),
-      createdOn: this.page.locator(''),
       dataType: this.page.locator(""),
     };
   }
