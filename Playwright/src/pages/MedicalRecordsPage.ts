@@ -8,7 +8,6 @@ export default class MedicalRecordsPage {
     okButton: Locator;
     fromDate: Locator;
     searchBar: Locator;
-    doctorFilter: Locator;
   };
 
   constructor(page: Page) {
@@ -19,7 +18,6 @@ export default class MedicalRecordsPage {
       okButton: page.locator(''),
       searchBar: page.locator(""),
       fromDate: page.locator(``),
-      doctorFilter: page.locator(''),
     };
   }
 
