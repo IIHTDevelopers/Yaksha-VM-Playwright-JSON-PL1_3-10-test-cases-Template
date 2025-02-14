@@ -17,7 +17,6 @@ export default class PharmacyPage {
   private invoiceField: Locator;
   private successMessage: Locator;
   private supplierName: Locator;
-  private showDetails: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -36,7 +35,6 @@ export default class PharmacyPage {
     this.invoiceField = page.locator('');
     this.successMessage = page.locator('');
     this.supplierName = page.locator('');
-    this.showDetails = page.locator('');
   }
 
   /**
