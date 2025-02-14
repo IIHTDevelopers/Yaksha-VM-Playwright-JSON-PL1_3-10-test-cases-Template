@@ -48,16 +48,6 @@ export class SubStorePage {
   }
 
   /**
-   * @Test7
-   * @description This method verifies the creation of an inventory requisition in the Ward Supply module.
-   * It navigates to the Substore section, selects a target inventory, adds an item, and submits the requisition.
-   * The method ensures the requisition is successfully created by verifying the success message.
-   */
-  async createInventoryRequisition() {
-    // Write your logic here
-  }
-
-  /**
      * @Test6
      * @description This method navigates to the Inventory Requisition section, captures a screenshot of the page, 
      *              and saves it in the screenshots folder.
